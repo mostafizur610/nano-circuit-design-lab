@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async=""
+      src="https://www.googletagmanager.com/gtag/js?id=UA-179540919-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-179540919-1");
+    </script>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="icon" href="images/logo/ncdl_logo.png" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/screen.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <title>Nano Circuit Design Laboratory</title>
+  </head>
+
+  <body>
+    <header
+      class="header"
+      :class="{ 'header-scrolled': scrolled  }"
+      id="header"
+    >
+      <div class="header-content">
+        <a href="/" style="display: flex">
+          <div class="logo">
+            <img
+              src="images/logo/logo.png"
+              alt="NCDL Lab Logo"
+              class="logo-image"
+              style="
+                height: 85px;
+                width: 100px;
+                margin: auto;
+                filter: brightness(120%);
+              "
+            />
+          </div>
+          <div class="text-warning logo-text h4" style="margin: auto">
+            NCDL Lab
+          </div>
+        </a>
+        <div class="header-menu">
+          <a class="header-menu-item" href="/"> Home </a>
+          <a class="header-menu-item" href="/members.html"> Members </a>
+          <a class="header-menu-item" href="/research.html"> Research </a>
+          <a class="header-menu-item" href="/link.html"> Links </a>
+          <a class="header-menu-item" href="/contact.html"> Contact </a>
+        </div>
+      </div>
+    </header>
+    <div class="main">
+      <div class="home">
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-ride="carousel"
+        >
+          <ol class="carousel-indicators">
+            <li
+              data-target="#carouselExampleIndicators"
+              data-slide-to="0"
+              class="active"
+            ></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                style="filter: brightness(45%)"
+                class="d-block w-100"
+                src="images/slider/slider_01.jpg"
+                alt="First slide"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                style="filter: brightness(45%)"
+                class="d-block w-100"
+                src="images/slider/slider_02.jpg"
+                alt="Second slide"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                style="filter: brightness(45%)"
+                class="d-block w-100"
+                src="images/slider/slider_03.png"
+                alt="Third slide"
+              />
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+          <div class="carousel-caption d-none d-md-block">
+            <h2 class="text-white rounded py-2">
+              Nano Circuit Design Laboratory @NCDL
+            </h2>
+            <p></p>
+            <p></p>
+          </div>
+        </div>
+
+        <!-- <div class="row">
+          <div class="container">
+            <div class="announcements v-padded">
+              <h3 class="row-title">Announcements</h3>
+
+              <div class="announcement row-item">
+                <h4 class="announcement-title">
+                  Join HLI Lab (Master degree program 2025 Spring)
+                </h4>
+
+                <div class="announcement-content">
+                  <p>
+                    2025년 봄학기 인공지능대학원/AI시스템공학과/소프트웨어학과
+                    석사 합격자 중 HLI Lab에 들어오시기 희망하시는 분은 2024년
+                    11월 9일 23:59까지 jy.bak@skku.edu로 자기소개서와 CV를
+                    첨부하여 메일 보내주세요. 연락 주�&nbsp; 분들과 11일에
+                    미팅하�&nbsp;자 합니다.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="container">
+            <div class="latest v-padded">
+              <h3 class="row-title">Latest Publications</h3>
+
+              <div class="research-item row-item">
+                <div class="title-row">
+                  <h4 class="title">
+                    KpopMT: Translation Dataset with Terminology for Kpop Fandom
+                  </h4>
+                </div>
+                <div class="authors">JiWoo Kim, Yunsu Kim, JinYeong Bak</div>
+                <div class="booktitle">
+                  Proceedings of the Seventh Workshop on Technologies for
+                  Machine Translation of Low-Resource Languages (LoResMT 2024)
+                </div>
+                <div class="link-buttons link-buttons-small">
+                  <p>
+                    <a href="https://aclanthology.org/2024.loresmt-1.3/">PDF</a>
+                    <a href="https://github.com/skswldndi/KpopMT">Dataset</a>
+                  </p>
+                </div>
+              </div>
+
+              <div class="research-item row-item">
+                <div class="title-row">
+                  <h4 class="title">
+                    Memoria: Resolving Fateful Forgetting Problem through
+                    Human-Inspired Memory Architecture
+                  </h4>
+                </div>
+                <div class="authors">Sangjun Park, JinYeong Bak</div>
+                <div class="booktitle">
+                  Proceedings of the 41st International Conference on Machine
+                  Learning (ICML 2024 Spotlight)
+                </div>
+                <div class="link-buttons link-buttons-small">
+                  <p>
+                    <a href="https://proceedings.mlr.press/v235/park24a.html"
+                      >PDF</a
+                    >
+                    <a href="https://github.com/cosmoquester/memoria">Code</a>
+                    <a href="https://icml.cc/virtual/2024/poster/32668"
+                      >Poster</a
+                    >
+                  </p>
+                </div>
+              </div>
+
+              <div class="research-item row-item">
+                <div class="title-row">
+                  <h4 class="title">
+                    PEMA: An Offsite-Tunable Plug-in External Memory Adaptation
+                    for Language Models
+                  </h4>
+                </div>
+                <div class="authors">
+                  HyunJin Kim, Young Jin Kim, JinYeong Bak
+                </div>
+                <div class="booktitle">
+                  Proceedings of the 2024 Conference of the North American
+                  Chapter of the Association for Computational Linguistics:
+                  Human Language Technologies (NAACL 2024)
+                </div>
+                <div class="link-buttons link-buttons-small">
+                  <p>
+                    <a href="https://aclanthology.org/2024.naacl-long.336"
+                      >PDF</a
+                    >
+                    <a href="https://github.com/agwaBom/PEMA">Code</a>
+                  </p>
+                </div>
+              </div>
+
+              <div class="research-item row-item">
+                <div class="title-row">
+                  <h4 class="title">
+                    EmoSum: Conversation Summarization with Emotional
+                    Consistency
+                  </h4>
+                </div>
+                <div class="authors">Youngjin Jo, JinYeong Bak</div>
+                <div class="booktitle">
+                  Proceedings of the 39th ACM/SIGAPP Symposium on Applied
+                  Computing (SAC 2024)
+                </div>
+                <div class="link-buttons link-buttons-small">
+                  <p>
+                    <a href="https://dl.acm.org/doi/10.1145/3605098.3635900"
+                      >PDF</a
+                    >
+                  </p>
+                </div>
+              </div>
+
+              <div class="research-item row-item">
+                <div class="title-row">
+                  <h4 class="title">
+                    From Values to Opinions: Predicting Human Behaviors and
+                    Stances Using Value-Injected Large Language Models
+                  </h4>
+                </div>
+                <div class="authors">
+                  Dongjun Kang, Joonsuk Park, Yohan Jo, JinYeong Bak
+                </div>
+                <div class="booktitle">
+                  Proceedings of the 2023 Conference on Empirical Methods in
+                  Natural Language Processing (EMNLP 2023)
+                </div>
+                <div class="link-buttons link-buttons-small">
+                  <p>
+                    <a href="https://aclanthology.org/2023.emnlp-main.961"
+                      >PDF</a
+                    >
+                    <a href="https://github.com/dongjunKANG/VIM">Code</a>
+                  </p>
+                </div>
+              </div>
+
+              <div class="research-item row-item">
+                <div class="title-row">
+                  <h4 class="title">
+                    Diversity Enhanced Narrative Question Generation for
+                    Storybooks
+                  </h4>
+                </div>
+                <div class="authors">Hokeun Yoon, JinYeong Bak</div>
+                <div class="booktitle">
+                  Proceedings of the 2023 Conference on Empirical Methods in
+                  Natural Language Processing (EMNLP 2023)
+                </div>
+                <div class="link-buttons link-buttons-small">
+                  <p>
+                    <a href="https://aclanthology.org/2023.emnlp-main.31"
+                      >PDF</a
+                    >
+                    <a href="https://github.com/hkyoon95/mQG">Code</a>
+                  </p>
+                </div>
+              </div>
+
+              <div class="research-item row-item">
+                <div class="title-row">
+                  <h4 class="title">
+                    Conversational Emotion-Cause Pair Extraction with Guided
+                    Mixture of Experts
+                  </h4>
+                </div>
+                <div class="authors">DongJin Jeong, JinYeong Bak</div>
+                <div class="booktitle">
+                  In the 17th Conference of the European Chapter of the
+                  Association for Computational Linguistics (EACL 2023)
+                </div>
+                <div class="link-buttons link-buttons-small">
+                  <p>
+                    <a href="https://aclanthology.org/2023.eacl-main.240"
+                      >PDF</a
+                    >
+                  </p>
+                </div>
+              </div>
+
+              <div class="link-buttons link-buttons-large">
+                <a class="more-button" href="/research.html">See All</a>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-inner">
+          <div class="footer-item">
+            <div class="footer-text">
+              © Copyright <span id="footer-year">2024</span> | Nano Circuit
+              Design Laboratory
+            </div>
+            <div class="footer-text pre-wrap">
+              Inje University, J512, Dept. of Nano Sci. Eng, 197 Inje-ro,
+              Gimhae-si, Gyeongsangnam-do, South Korea
+            </div>
+          </div>
+          <div class="footer-item">
+            <div class="footer-text">
+              <a href=""> Repository for this Website </a>
+              �&nbsp;|�&nbsp;
+              <a href=""> Edit Content </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+        document.getElementById("footer-year").innerHTML =
+          new Date().getFullYear();
+      </script>
+    </footer>
+
+    <script src="js/index.js"></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

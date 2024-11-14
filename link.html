@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async=""
+      src="https://www.googletagmanager.com/gtag/js?id=UA-179540919-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-179540919-1");
+    </script>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="icon" href="images/logo/ncdl_logo.png" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/screen.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <title>Nano Circuit Design Laboratory</title>
+  </head>
+
+  <body>
+    <header
+      class="header"
+      :class="{ 'header-scrolled': scrolled  }"
+      id="header"
+    >
+      <div class="header-content">
+        <a href="/" style="display: flex">
+          <div class="logo">
+            <img
+              src="images/logo/logo.png"
+              alt="NCDL Lab Logo"
+              class="logo-image"
+              style="
+                height: 85px;
+                width: 100px;
+                margin: auto;
+                filter: brightness(120%);
+              "
+            />
+          </div>
+          <div class="text-warning logo-text h4" style="margin: auto">
+            NCDL Lab
+          </div>
+        </a>
+
+        <div class="header-menu">
+          <a class="header-menu-item" href="/"> Home </a>
+          <a class="header-menu-item" href="/members.html"> Members </a>
+          <a class="header-menu-item" href="/research.html"> Research </a>
+          <a class="header-menu-item" href="/link.html"> Links </a>
+          <a class="header-menu-item" href="/contact.html"> Contact </a>
+        </div>
+      </div>
+    </header>
+    <div class="main">
+      <div class="links">
+        <section
+          class="screen"
+          style="
+            background-image: linear-gradient(
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)
+              ),
+              url(images/link/link.png);
+          "
+        >
+          <div class="content">
+            <h2>Links</h2>
+            <br />
+            <small>Nano Circuit Design Laboratory @NCDL</small>
+          </div>
+        </section>
+
+        <div style="margin-bottom: 15%">
+          <p class="text-start px-5 mt-5">
+            Research in nano circuit design focuses on creating new
+            methodologies and materials to push the limits of traditional
+            circuit technology, exploring emerging nanomaterials and advanced
+            designs for energy-efficient, compact systems. For instance, the
+            Nano-Design Research Group at Harvard investigates end-to-end
+            technology frameworks to achieve more efficient Very-Large-Scale
+            Integration (VLSI) systems using technologies like carbon nanotube
+            transistors and monolithic 3D integration, which are increasingly
+            used for scalable energy-efficient circuits in sub-10 nm nodes.
+            <br />
+            <br />​ Further, IEEE research highlights that innovation in micro
+            and nano circuit design includes new methods in design automation
+            and optimization, specifically tailored to handle imperfections and
+            variations inherent to nanoscale components. This approach helps
+            manage complexities in areas such as signal integrity, power, and
+            thermal management, which are particularly challenging at the nano
+            level​ IEEE XPLORE . <br />
+            <br />
+            For more detailed insights and publications on current advancements,
+            you may refer to resources such as Harvard’s Nano-Design Research
+            Group and IEEE's extensive catalog on nano circuit design.
+            <a href="https://ieeexplore.ieee.org/document/10153528"
+              >IEEE Explore</a
+            >
+          </p>
+        </div>
+
+        <!-- <div class="row">
+          <div class="container">
+            <div class="group v-padded">
+              <h3 class="row-title">Manuals</h3>
+
+              <div class="link-item row-card-item">
+                <div class="title">Graduation Project/Paper</div>
+
+                <div class="subtitle">
+                  How to apply to JinYeong for Graduation Project/Paper (Korean)
+                </div>
+
+                <div class="links">
+                  <a
+                    href="https://nosyu.notion.site/HLILab-05f78a06c5c447b097126e99dd005d76"
+                    >Link</a
+                  >
+                </div>
+              </div>
+
+              <div class="link-item row-card-item">
+                <div class="title">Lab notebook</div>
+
+                <div class="subtitle">
+                  How to write HLILab notebook (Korean/English)
+                </div>
+
+                <div class="links">
+                  <a
+                    href="https://nosyu.notion.site/Lab-Notebook-c5c309fd4d0944368419bef9d987c73d"
+                    >Link</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="container">
+            <div class="group v-padded">
+              <h3 class="row-title">Conferences</h3>
+
+              <div class="link-item row-card-item">
+                <div class="title">ACL</div>
+
+                <div class="subtitle">
+                  Association for Computational Linguistics
+                </div>
+
+                <div class="description">
+                  <p>Paper submission deadline is usually in March.</p>
+
+                  <p>The conference is usually held in August.</p>
+                </div>
+
+                <div class="links">
+                  <a href="http://www.google.com/search?q=ACL%202025&amp;btnI">
+                    ACL 2025
+                  </a>
+                </div>
+              </div>
+
+              <div class="link-item row-card-item">
+                <div class="title">EMNLP</div>
+
+                <div class="subtitle">
+                  Conference on Empirical Methods in Natural Language Processing
+                </div>
+
+                <div class="description">
+                  <p>Paper submission deadline is usually in May.</p>
+
+                  <p>The conference is usually held in November.</p>
+                </div>
+
+                <div class="links">
+                  <a
+                    href="http://www.google.com/search?q=EMNLP%202024&amp;btnI"
+                  >
+                    EMNLP 2024
+                  </a>
+
+                  <a
+                    href="http://www.google.com/search?q=EMNLP%202025&amp;btnI"
+                  >
+                    EMNLP 2025
+                  </a>
+                </div>
+              </div>
+
+              <div class="link-item row-card-item">
+                <div class="title">NAACL</div>
+
+                <div class="subtitle">
+                  North American Chapter of the Association for Computational
+                  Linguistics
+                </div>
+
+                <div class="description">
+                  <p>Paper submission deadline is usually in December.</p>
+
+                  <p>The conference is usually held in June.</p>
+                </div>
+
+                <div class="links">
+                  <a
+                    href="http://www.google.com/search?q=NAACL%202025&amp;btnI"
+                  >
+                    NAACL 2025
+                  </a>
+                </div>
+              </div>
+
+              <div class="link-item row-card-item">
+                <div class="title">AAAI</div>
+
+                <div class="subtitle">
+                  Association for the Advancement of Artificial Intelligence
+                </div>
+
+                <div class="description">
+                  <p>Paper submission deadline is usually in September.</p>
+
+                  <p>The conference is usually held in January.</p>
+                </div>
+
+                <div class="links">
+                  <a href="http://www.google.com/search?q=AAAI%202025&amp;btnI">
+                    AAAI 2025
+                  </a>
+                </div>
+              </div>
+
+              <div class="link-item row-card-item">
+                <div class="title">NeurIPS</div>
+
+                <div class="subtitle">
+                  Conference on Neural Information Processing Systems
+                </div>
+
+                <div class="description">
+                  <p>Paper submission deadline is usually in May.</p>
+
+                  <p>The conference is usually held in December.</p>
+                </div>
+
+                <div class="links">
+                  <a
+                    href="http://www.google.com/search?q=NeurIPS%202024&amp;btnI"
+                  >
+                    NeurIPS 2024
+                  </a>
+
+                  <a
+                    href="http://www.google.com/search?q=NeurIPS%202025&amp;btnI"
+                  >
+                    NeurIPS 2025
+                  </a>
+                </div>
+              </div>
+
+              <div class="link-item row-card-item">
+                <div class="title">ACM SIGKDD</div>
+
+                <div class="subtitle">
+                  ACM Special Interest Group on Knowledge Discovery and Data
+                  Mining
+                </div>
+
+                <div class="description">
+                  <p>Paper submission deadline is usually in February.</p>
+
+                  <p>The conference is usually held in August.</p>
+                </div>
+
+                <div class="links">
+                  <a
+                    href="http://www.google.com/search?q=SIGKDD%202025&amp;btnI"
+                  >
+                    SIGKDD 2025
+                  </a>
+                </div>
+              </div>
+
+              <div class="link-item row-card-item">
+                <div class="title">ICWSM</div>
+
+                <div class="subtitle">
+                  International Conference on Web and Social Media
+                </div>
+
+                <div class="description">
+                  <p>Paper submission deadline is usually in September.</p>
+
+                  <p>The conference is usually held in June.</p>
+                </div>
+
+                <div class="links">
+                  <a
+                    href="http://www.google.com/search?q=ICWSM%202025&amp;btnI"
+                  >
+                    ICWSM 2025
+                  </a>
+                </div>
+              </div>
+
+              <div class="link-item row-card-item">
+                <div class="title">ICML</div>
+
+                <div class="subtitle">
+                  International Conference on Machine Learning
+                </div>
+
+                <div class="description">
+                  <p>Paper submission deadline is usually in January.</p>
+
+                  <p>The conference is usually held in June.</p>
+                </div>
+
+                <div class="links">
+                  <a href="http://www.google.com/search?q=ICML%202025&amp;btnI">
+                    ICML 2025
+                  </a>
+                </div>
+              </div>
+
+              <div class="link-item row-card-item">
+                <div class="title">IJCAI</div>
+
+                <div class="subtitle">
+                  International Joint Conference on Artificial Intelligence
+                </div>
+
+                <div class="description">
+                  <p>Paper submission deadline is usually in February.</p>
+
+                  <p>The conference is usually held in August.</p>
+                </div>
+
+                <div class="links">
+                  <a
+                    href="http://www.google.com/search?q=IJCAI%202025&amp;btnI"
+                  >
+                    IJCAI 2025
+                  </a>
+                </div>
+              </div>
+
+              <div class="link-item row-card-item">
+                <div class="title">EACL</div>
+
+                <div class="subtitle">
+                  European Chapter of the Association for Computational
+                  Linguistics
+                </div>
+
+                <div class="description">
+                  <p>Paper submission deadline is usually in October.</p>
+
+                  <p>The conference is usually held in May.</p>
+                </div>
+
+                <div class="links">
+                  <a href="http://www.google.com/search?q=EACL%202025&amp;btnI">
+                    EACL 2025
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="container">
+            <div class="group v-padded">
+              <h3 class="row-title">Journals</h3>
+
+              <div class="link-item row-card-item">
+                <div class="title">
+                  Journal of Artificial Intelligence Research
+                </div>
+
+                <div class="links">
+                  <a href="http://www.jair.org/">Link</a>
+                </div>
+              </div>
+
+              <div class="link-item row-card-item">
+                <div class="title">Journal of Machine Learning Research</div>
+
+                <div class="links">
+                  <a href="http://jmlr.csail.mit.edu/">Link</a>
+                </div>
+              </div>
+
+              <div class="link-item row-card-item">
+                <div class="title">Artificial Intelligence</div>
+
+                <div class="links">
+                  <a
+                    href="http://www.elsevier.com/wps/find/journaldescription.cws_home/505601/description#description"
+                    >Link</a
+                  >
+                </div>
+              </div>
+
+              <div class="link-item row-card-item">
+                <div class="title">Journal of the ACM</div>
+
+                <div class="links">
+                  <a href="http://jacm.acm.org/">Link</a>
+                </div>
+              </div>
+
+              <div class="link-item row-card-item">
+                <div class="title">Machine Learning</div>
+
+                <div class="links">
+                  <a href="http://www.springer.com/computer/ai/journal/10994"
+                    >Link</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="container">
+            <div class="group v-padded">
+              <h3 class="row-title">Resources</h3>
+
+              <div class="link-item row-card-item">
+                <div class="title">ACL Anthology</div>
+
+                <div class="links">
+                  <a href="https://aclanthology.org/">Link</a>
+                </div>
+              </div>
+
+              <div class="link-item row-card-item">
+                <div class="title">Machine Learning Summer Schools</div>
+
+                <div class="links">
+                  <a href="http://www.mlss.cc/">Link</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-inner">
+          <div class="footer-item">
+            <div class="footer-text">
+              © Copyright <span id="footer-year">2024</span> | Nano Circuit
+              Design Laboratory
+            </div>
+            <div class="footer-text pre-wrap">
+              Inje University, J512, Dept. of Nano Sci. Eng, 197 Inje-ro,
+              Gimhae-si, Gyeongsangnam-do, South Korea
+            </div>
+          </div>
+          <div class="footer-item">
+            <div class="footer-text">
+              <a href=""> Repository for this Website </a>
+              �&nbsp;|�&nbsp;
+              <a href=""> Edit Content </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+        document.getElementById("footer-year").innerHTML =
+          new Date().getFullYear();
+      </script>
+    </footer>
+
+    <script src="js/index.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

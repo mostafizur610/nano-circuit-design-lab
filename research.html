@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async=""
+      src="https://www.googletagmanager.com/gtag/js?id=UA-179540919-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-179540919-1");
+    </script>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="icon" href="images/logo/ncdl_logo.png" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/screen.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <title>Nano Circuit Design Laboratory</title>
+
+    <script src="js/vue.min.js"></script>
+    <script src="js/vue-markdown.js"></script>
+    <script>
+      Vue.use(VueMarkdown);
+    </script>
+  </head>
+
+  <body>
+    <header
+      class="header"
+      :class="{ 'header-scrolled': scrolled  }"
+      id="header"
+    >
+      <div class="header-content">
+        <a href="/" style="display: flex">
+          <div class="logo">
+            <img
+              src="images/logo/logo.png"
+              alt="NCDL Lab Logo"
+              class="logo-image"
+              style="
+              height: 85px;
+              width: 100px;
+              margin: auto;
+              filter: brightness(120%);
+            "
+            />
+          </div>
+          <div class="text-warning logo-text h4" style="margin: auto">
+            NCDL Lab
+          </div>
+        </a>
+
+        <div class="header-menu">
+          <a class="header-menu-item" href="/"> Home </a>
+          <a class="header-menu-item" href="/members.html"> Members </a>
+          <a class="header-menu-item" href="/research.html"> Research </a>
+          <a class="header-menu-item" href="/link.html"> Links </a>
+          <a class="header-menu-item" href="/contact.html"> Contact </a>
+        </div>
+      </div>
+    </header>
+    <div class="main">
+      <noscript>
+        <div class="research" id="research">
+          <section
+            class="screen"
+            style="
+              background-image: linear-gradient(
+                  rgba(0, 0, 0, 0.5),
+                  rgba(0, 0, 0, 0.5)
+                ),
+                url(/images/research/research.png);
+            "
+          >
+            <div class="content">
+              <h2>Research</h2>
+              <br />
+              <small>Nano Circuit Design Laboratory @NCDL</small>
+            </div>
+          </section>
+
+          <!-- <div class="row">
+            <div class="container">
+              <div class="category v-padded">
+                <h3 class="row-title">Publications</h3>
+
+                <div class="research-item row-item">
+                  <div class="title-row">
+                    <h4 class="title">
+                      KpopMT: Translation Dataset with Terminology for Kpop
+                      Fandom
+                    </h4>
+                  </div>
+                  <div class="authors">JiWoo Kim, Yunsu Kim, JinYeong Bak</div>
+                  <div class="booktitle">
+                    Proceedings of the Seventh Workshop on Technologies for
+                    Machine Translation of Low-Resource Languages (LoResMT 2024)
+                  </div>
+                  <div class="link-buttons link-buttons-small">
+                    <p>
+                      <a href="https://aclanthology.org/2024.loresmt-1.3/"
+                        >PDF</a
+                      >
+                      <a href="https://github.com/skswldndi/KpopMT">Dataset</a>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="research-item row-item">
+                  <div class="title-row">
+                    <h4 class="title">
+                      Memoria: Resolving Fateful Forgetting Problem through
+                      Human-Inspired Memory Architecture
+                    </h4>
+                  </div>
+                  <div class="authors">Sangjun Park, JinYeong Bak</div>
+                  <div class="booktitle">
+                    Proceedings of the 41st International Conference on Machine
+                    Learning (ICML 2024 Spotlight)
+                  </div>
+                  <div class="link-buttons link-buttons-small">
+                    <p>
+                      <a href="https://proceedings.mlr.press/v235/park24a.html"
+                        >PDF</a
+                      >
+                      <a href="https://github.com/cosmoquester/memoria">Code</a>
+                      <a href="https://icml.cc/virtual/2024/poster/32668"
+                        >Poster</a
+                      >
+                    </p>
+                  </div>
+                </div>
+
+                <div class="research-item row-item">
+                  <div class="title-row">
+                    <h4 class="title">
+                      PEMA: An Offsite-Tunable Plug-in External Memory
+                      Adaptation for Language Models
+                    </h4>
+                  </div>
+                  <div class="authors">
+                    HyunJin Kim, Young Jin Kim, JinYeong Bak
+                  </div>
+                  <div class="booktitle">
+                    Proceedings of the 2024 Conference of the North American
+                    Chapter of the Association for Computational Linguistics:
+                    Human Language Technologies (NAACL 2024)
+                  </div>
+                  <div class="link-buttons link-buttons-small">
+                    <p>
+                      <a href="https://aclanthology.org/2024.naacl-long.336"
+                        >PDF</a
+                      >
+                      <a href="https://github.com/agwaBom/PEMA">Code</a>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="research-item row-item">
+                  <div class="title-row">
+                    <h4 class="title">
+                      EmoSum: Conversation Summarization with Emotional
+                      Consistency
+                    </h4>
+                  </div>
+                  <div class="authors">Youngjin Jo, JinYeong Bak</div>
+                  <div class="booktitle">
+                    Proceedings of the 39th ACM/SIGAPP Symposium on Applied
+                    Computing (SAC 2024)
+                  </div>
+                  <div class="link-buttons link-buttons-small">
+                    <p>
+                      <a href="https://dl.acm.org/doi/10.1145/3605098.3635900"
+                        >PDF</a
+                      >
+                    </p>
+                  </div>
+                </div>
+
+                <div class="research-item row-item">
+                  <div class="title-row">
+                    <h4 class="title">
+                      From Values to Opinions: Predicting Human Behaviors and
+                      Stances Using Value-Injected Large Language Models
+                    </h4>
+                  </div>
+                  <div class="authors">
+                    Dongjun Kang, Joonsuk Park, Yohan Jo, JinYeong Bak
+                  </div>
+                  <div class="booktitle">
+                    Proceedings of the 2023 Conference on Empirical Methods in
+                    Natural Language Processing (EMNLP 2023)
+                  </div>
+                  <div class="link-buttons link-buttons-small">
+                    <p>
+                      <a href="https://aclanthology.org/2023.emnlp-main.961"
+                        >PDF</a
+                      >
+                      <a href="https://github.com/dongjunKANG/VIM">Code</a>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="research-item row-item">
+                  <div class="title-row">
+                    <h4 class="title">
+                      Diversity Enhanced Narrative Question Generation for
+                      Storybooks
+                    </h4>
+                  </div>
+                  <div class="authors">Hokeun Yoon, JinYeong Bak</div>
+                  <div class="booktitle">
+                    Proceedings of the 2023 Conference on Empirical Methods in
+                    Natural Language Processing (EMNLP 2023)
+                  </div>
+                  <div class="link-buttons link-buttons-small">
+                    <p>
+                      <a href="https://aclanthology.org/2023.emnlp-main.31"
+                        >PDF</a
+                      >
+                      <a href="https://github.com/hkyoon95/mQG">Code</a>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="research-item row-item">
+                  <div class="title-row">
+                    <h4 class="title">
+                      Conversational Emotion-Cause Pair Extraction with Guided
+                      Mixture of Experts
+                    </h4>
+                  </div>
+                  <div class="authors">DongJin Jeong, JinYeong Bak</div>
+                  <div class="booktitle">
+                    In the 17th Conference of the European Chapter of the
+                    Association for Computational Linguistics (EACL 2023)
+                  </div>
+                  <div class="link-buttons link-buttons-small">
+                    <p>
+                      <a href="https://aclanthology.org/2023.eacl-main.240"
+                        >PDF</a
+                      >
+                    </p>
+                  </div>
+                </div>
+
+                <div class="research-item row-item">
+                  <div class="title-row">
+                    <h4 class="title">
+                      A Transformer-based Function Symbol Name Inference Model
+                      from an Assembly Language for Binary Reversing
+                    </h4>
+                  </div>
+                  <div class="authors">
+                    HyunJin Kim, JinYeong Bak, Kyunghyun Cho, and Hyungjoon Koo
+                  </div>
+                  <div class="booktitle">
+                    In the 18th ACM Asia Conference on Computer and
+                    Communications Security (ASIACCS 2023)
+                  </div>
+                  <div class="link-buttons link-buttons-small">
+                    <p>
+                      <a
+                        href="https://dl.acm.org/doi/abs/10.1145/3579856.3582823"
+                        >PDF</a
+                      >
+                      <a href="https://github.com/agwaBom/AsmDepictor">Code</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </noscript>
+      <div class="research" id="research">
+        <section
+          class="screen"
+          style="
+            background-image: linear-gradient(
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)
+              ),
+              url(images/research/research.png);
+          "
+        >
+          <div class="content">
+            <h2>Research</h2>
+            <br />
+            <small>Nano Circuit Design Laboratory @NCDL</small>
+          </div>
+        </section>
+<!-- 
+        <div class="row">
+          <div class="container">
+            <div class="tag-selector v-padded">
+              <h3 class="row-title">Topics</h3>
+              <div class="link-buttons link-buttons-large">
+                <a
+                  class="tag"
+                  :class="{ active: activeTagId === null }"
+                  @click="activeTagId = null"
+                >
+                  Show All
+                </a>
+                <a
+                  class="tag"
+                  v-for="tagId in Object.keys(tags)"
+                  :key="tagId"
+                  :class="{ active: activeTagId === tagId }"
+                  :style="{ backgroundColor: tags[tagId].color }"
+                  @click="activeTagId = tagId"
+                >
+                  [[ tags[tagId].title ]]
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row" v-for="(group, i) in research" :key="i">
+          <div class="container">
+            <div class="category v-padded">
+              <h3 class="row-title">[[ group.title ]]</h3>
+              <template v-for="(item, i) in group.rows">
+                <div
+                  class="research-item row-item"
+                  :class="{ hidden: isHidden(item.tags) }"
+                >
+                  <div class="title-row">
+                    <h4 class="title">[[ item.title ]]</h4>
+                    <template v-for="tagId in item.tags">
+                      <div
+                        class="tag"
+                        v-if="tagId in tags"
+                        :key="tagId"
+                        :style="{ backgroundColor: tags[tagId].color }"
+                      >
+                        [[ tags[tagId].tag ]]
+                      </div>
+                    </template>
+                  </div>
+                  <div class="authors">[[ item.authors ]]</div>
+                  <div class="booktitle">[[ item.booktitle ]]</div>
+                  <div class="link-buttons link-buttons-small">
+                    <vue-markdown
+                      :source="item.links"
+                      :breaks="false"
+                      :anchorattributes="{ target: '_blank' }"
+                    >
+                    </vue-markdown>
+                  </div>
+                </div>
+              </template>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        new Vue({
+          el: "#research",
+          delimiters: ["[[", "]]"],
+          data: {
+            research: [
+              {
+                title: "Publications",
+                rows: [
+                  {
+                    title:
+                      "KpopMT: Translation Dataset with Terminology for Kpop Fandom",
+                    authors: "JiWoo Kim, Yunsu Kim, JinYeong Bak",
+                    booktitle:
+                      "Proceedings of the Seventh Workshop on Technologies for Machine Translation of Low-Resource Languages (LoResMT 2024)",
+                    links:
+                      "[PDF](https://aclanthology.org/2024.loresmt-1.3/)\n[Dataset](https://github.com/skswldndi/KpopMT)",
+                    tags: ["nlp", "css"],
+                  },
+                  {
+                    title:
+                      "Memoria: Resolving Fateful Forgetting Problem through Human-Inspired Memory Architecture",
+                    authors: "Sangjun Park, JinYeong Bak",
+                    booktitle:
+                      "Proceedings of the 41st International Conference on Machine Learning (ICML 2024 Spotlight)",
+                    links:
+                      "[PDF](https://proceedings.mlr.press/v235/park24a.html)\n[Code](https://github.com/cosmoquester/memoria)\n[Poster](https://icml.cc/virtual/2024/poster/32668)",
+                    tags: ["ml"],
+                  },
+                  {
+                    title:
+                      "PEMA: An Offsite-Tunable Plug-in External Memory Adaptation for Language Models",
+                    authors: "HyunJin Kim, Young Jin Kim, JinYeong Bak",
+                    booktitle:
+                      "Proceedings of the 2024 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (NAACL 2024)",
+                    links:
+                      "[PDF](https://aclanthology.org/2024.naacl-long.336)\n[Code](https://github.com/agwaBom/PEMA)",
+                    tags: ["ml", "nlp"],
+                  },
+                  {
+                    title:
+                      "EmoSum: Conversation Summarization with Emotional Consistency",
+                    authors: "Youngjin Jo, JinYeong Bak",
+                    booktitle:
+                      "Proceedings of the 39th ACM/SIGAPP Symposium on Applied Computing (SAC 2024)",
+                    links:
+                      "[PDF](https://dl.acm.org/doi/10.1145/3605098.3635900)",
+                    tags: ["nlp"],
+                  },
+                  {
+                    title:
+                      "From Values to Opinions: Predicting Human Behaviors and Stances Using Value-Injected Large Language Models",
+                    authors:
+                      "Dongjun Kang, Joonsuk Park, Yohan Jo, JinYeong Bak",
+                    booktitle:
+                      "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing (EMNLP 2023)",
+                    links:
+                      "[PDF](https://aclanthology.org/2023.emnlp-main.961)\n[Code](https://github.com/dongjunKANG/VIM)",
+                    tags: ["nlp", "css"],
+                  },
+                  {
+                    title:
+                      "Diversity Enhanced Narrative Question Generation for Storybooks",
+                    authors: "Hokeun Yoon, JinYeong Bak",
+                    booktitle:
+                      "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing (EMNLP 2023)",
+                    links:
+                      "[PDF](https://aclanthology.org/2023.emnlp-main.31)\n[Code](https://github.com/hkyoon95/mQG)",
+                    tags: ["nlp"],
+                  },
+                  {
+                    title:
+                      "Conversational Emotion-Cause Pair Extraction with Guided Mixture of Experts",
+                    authors: "DongJin Jeong, JinYeong Bak",
+                    booktitle:
+                      "In the 17th Conference of the European Chapter of the Association for Computational Linguistics (EACL 2023)",
+                    links: "[PDF](https://aclanthology.org/2023.eacl-main.240)",
+                    tags: ["ml", "nlp"],
+                  },
+                  {
+                    title:
+                      "A Transformer-based Function Symbol Name Inference Model from an Assembly Language for Binary Reversing",
+                    authors:
+                      "HyunJin Kim, JinYeong Bak, Kyunghyun Cho, and Hyungjoon Koo",
+                    booktitle:
+                      "In the 18th ACM Asia Conference on Computer and Communications Security (ASIACCS 2023)",
+                    links:
+                      "[PDF](https://dl.acm.org/doi/abs/10.1145/3579856.3582823)\n[Code](https://github.com/agwaBom/AsmDepictor)",
+                    tags: ["ml", "nlp"],
+                  },
+                ],
+              },
+            ],
+            tags: {
+              ml: { title: "Machine Learning", tag: "ML", color: "#e63946" },
+              nlp: {
+                title: "Natural Language Processing",
+                tag: "NLP",
+                color: "#e76f51",
+              },
+              css: {
+                title: "Computational Social Science",
+                tag: "Social",
+                color: "#2a9d8f",
+              },
+              hci: {
+                title: "Human Computer Interaction",
+                tag: "HCI",
+                color: "#264653",
+              },
+            },
+            activeTagId: null,
+          },
+          methods: {
+            isHidden: function (tags) {
+              return (
+                this.activeTagId !== null && !tags.includes(this.activeTagId)
+              );
+            },
+          },
+        });
+      </script> -->
+
+      <div class="text-center py-4">
+        <img src="images/research/nano_research.png" alt="">
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-inner">
+          <div class="footer-item">
+            <div class="footer-text">
+              © Copyright <span id="footer-year">2024</span> | Nano Circuit
+              Design Laboratory
+            </div>
+            <div class="footer-text pre-wrap">
+              Inje University, J512, Dept. of Nano Sci. Eng, 197 Inje-ro,
+              Gimhae-si, Gyeongsangnam-do, South Korea
+            </div>
+          </div>
+          <div class="footer-item">
+            <div class="footer-text">
+              <a href=""> Repository for this Website </a>
+              �&nbsp;|�&nbsp;
+              <a href=""> Edit Content </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+        document.getElementById("footer-year").innerHTML =
+          new Date().getFullYear();
+      </script>
+    </footer>
+
+    <script src="js/index.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
